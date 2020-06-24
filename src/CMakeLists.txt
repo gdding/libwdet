@@ -14,4 +14,5 @@ target_link_libraries(wdet_test2 wdet)
 
 install(TARGETS wdet LIBRARY DESTINATION lib)
 install(FILES wdet.h DESTINATION include)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/filter/ DESTINATION bin)
 install(TARGETS wdet_encrypt wdet_test1 wdet_test2 DESTINATION bin)
